@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Ebrima';
+      }
+      .myimg {
+        width: 23px;
+        height: 23px;
+        float: left;
+        /* margin-right: 970px; */
+      }
+      .container {
+        overflow: auto;
+        text-align: right;
+        background-color: rgba(245, 245, 245, 255);
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      .container a{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .container a:hover{
+        text-decoration: underline;
+      }
+      .menu {
+        display: inline-block;
+        margin-left: 0px;
+        border-left: 1px solid black;
+        padding-left: 10px;
+        text-decoration: none;
+        font-family: 'Ebrima';
+        font-weight:bold;
+        font-size: small;
+        color: rgb(94, 93, 93);
+      }
+      .menu:first-child {
+        border-left: none;
+      }
+      .search-bar {
+        display: inline-flex;
+        align-items: flex-start;
+      }
+      header {
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .mylogo {
+        width: 80px;
+        height: 50px;
+        margin-left: 40px;
+      }
+      nav {
+        /* margin-right: 450px; */
+        display: flex;
+        align-self: center;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px; /* Adjust spacing between menu items */
+        font-family: 'Ebrima';
+      }
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .search{
+        border-radius: 18px;
+        padding: 10px;
+        background-color: rgb(245, 245, 245);
+        border: 0px;
+        font-weight: bold;
+        font-family: 'Consolas';
+        font-size: large;
+        color: rgb(182, 182, 182);     
+      }
+      .fa-lg{
+        padding-top: 20px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        border-radius: 100%;
+      }
+      .glow:hover{
+        background-color: rgba(245, 245, 245, 255);
+      }
+      .sale{
+        display:block;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        font-family: 'Ebrima';
+        font-weight:bold;
+        padding: 5px;
+      }
+      .banner{
+        height: 700px;
+        width: 1470px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .arman{
+        width: 1500px;
+      }
+      .shop{
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+        align-items: center;
+        font-size: medium;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding: 7px;
+      }
+      .shoppie{
+        display:flex;justify-content: center;
+        align-items:center ;
+      }
+      .vide{
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .own{
+        width: 1500px;
+      }
+      .pics{
+        width: 1500px;
+        height: 600px;
+      }
+      .time p,i{
+        display: inline-block;
+      }
+      .arrow{
+        float:right;
+        margin-right: 50px;
+      }
+      .arr:hover{
+        background-color: rgb(140, 138, 138);
+      }
+      .arr{
+        padding: 20px;
+        background-color: rgb(219, 206, 206);
+        border-radius: 50px;
+      }
+      table{
+        border-collapse: collapse;
+        padding: 20px;
+       }
+       .jk{
+        padding-left: 170px;
+        padding-right: 50px;
+       }
+       .shoe{
+        margin-left: 20px;
+      margin-right: 20px;
+       }
+       .list{
+        display: flex;
+        justify-content: center;
+       }
+       .head{
+        font-weight: bold;
+       }
+       .list ul li{
+        color: grey;
+       }
+       .list ul li:hover{
+        color:black;
+       }
+.foot{
+  background-color: #000000;
+  color: #fff; 
+  display: flex;
+  padding-left: 100px;
+}
+.icons ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .icons ul li {
+      background-color: #fff;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href=""><img src="jor.png" class="myimg" /></a>
+      <a href="" class="menu">Find a Store</a>
+      <a href="" class="menu">Help</a>
+      <a href="" class="menu">Join Us</a>
+      <a href="" class="menu">Sign in</a>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="n.jpeg" alt="Logo" class="mylogo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">New & Featured</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Customise</a></li>
+          <li><a href="#">SNKRS</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <div class="search glow">
+          <i class="fa fa-sharp fa-light fa-magnifying-glass" style="color: #161616;"></i>
+          Search &nbsp &nbsp &nbsp &nbsp
+        </div>
+        <div class="icons">
+          <i class="fa fa-regular fa-heart fa-lg glow" style="margin-left: 32px;"></i>
+          <i class="fa fa-thin fa-bag-shopping fa-lg glow"></i>
+        </div>
+      </div>   
+    </header>
+    <div class="sale">
+      <p style="text-align: center;">Save Up to 40%</p>
+      <small><p style="text-align: center; text-decoration: underline;">Shop All Our New Markdowns </p></small>
+    </div>
+    <div>
+      <img src="banner.png" alt="banner" class="banner">
+    </div>
+    <div>
+      <img src="arman.png" alt="arman" class="arman">
+    </div>
+    <div class="shoppie"><button class="shop">Shop</button>
+    </div>
+    <p style="font-size: large; padding-left: 20px;"> 
+      Featured
+    </p>
+    <div class="vide">
+      <video src="video.mp4" width="1460px" height="750px" autoplay muted loop></video>
+    </div>
+    <div>
+      <img src="own.png" class="own">
+    </div>
+  </div>
+  <div class="shoppie"><button class="shop">Shop</button>
+  </div>
+   <p style="font-size: large; padding-left: 20px;"> 
+    Summer Must-Haves
+   </p>
+   <img src="3pics.png" alt="3" class="pics">
+ <div class="time"> <p style="font-size: large; padding-left: 40px;"> 
+    Timeless Varsity Looks
+   </p>
+   <div class="arrow">
+    <p >
+      Shop 
+     </p>
+     <i class="fa-solid fa-less-than arr"></i>
+     <i class="fa-solid fa-greater-than arr"></i>
+   </div>
+  </div>
+    <div style="overflow-x:auto;" class="shoe">
+      <table>
+        <tr>
+          <td><img src="a.png" alt=""height="500px" width="500px"></td>
+          <td><img src="b.png" alt=""height="500px" width="500px"></td>
+          <td><img src="c.png" alt=""height="500px" width="500px"></td>
+          <td><img src="d.png" alt=""height="500px" width="500px"></td>
+          <td><img src="e.png" alt=""height="500px" width="500px"></td>
+        </tr>      
+        <tr>
+        <td>Nike Club Fleece<br>
+      Men's Stripped Heavy Weight Terry Crew<br>
+       MRP:₹4,295</td>
+        <td>Nike Club Fleece<br>
+        Men's Flow Short<br/>
+        MRP:₹2,995</td>
+        <td>Nike Club Fleece<br>
+        Men's French Terry Pullover Hoddie<br>
+        MRP:₹3,995</td>
+        <td>Nike Sports Wear<br>
+        Men's Wowen Oversized Shorts<br>
+        MRP:₹3,595</td>
+        <td>Nike Zoom Vomero 5<br>
+      Men's Shoes<br>
+        MRP:₹4,995</td>
+      </tr>
+      </table>
+    </div>
+  </div>
+  <br/>
+  <br>
+<div class="jk">
+  <img src="j.png" alt="" height="800px" width="600px">
+    <img src="k.png" alt="" height="800px" width="600px">
+</div>
+  <div class="time"> <p style="font-size: large; padding-left: 40px;"> 
+    Classics Spotlight
+   </p>
+   <div class="arrow">
+     <i class="fa-solid fa-less-than arr"></i>
+     <i class="fa-solid fa-greater-than arr"></i></div>
+  </div>
+  <div style="overflow-x:auto;" class="shoe">
+    <table>
+      <tr>
+        <td><img src="f.png" alt="" height="500px" width="500px"></td>
+        <td><img src="g.png" alt=""height="500px" width="500px"></td>
+        <td><img src="i.png" alt=""height="500px" width="500px"></td>
+        <td><img src="h.png" alt=""height="500px" width="500px"></td>
+      </tr>
+    </table>
+  </div>
+  <br/>
+  <br/>
+  <div class="time"> <p style="font-size: large; padding-left: 40px;"> 
+       Shop by Sport
+  </p>
+   <div class="arrow">
+     <i class="fa-solid fa-less-than arr"></i>
+     <i class="fa-solid fa-greater-than arr"></i>
+   </div>
+   <div style="overflow-x:auto;" class="shoe">
+    <table>
+      <tr>
+        <td><img src="q.png" alt=""height="350px" width="550px"></td>
+        <td><img src="r.png" alt=""height="350px" width="550px"></td>
+        <td><img src="s.png" alt=""height="350px" width="550px"></td>
+        <td><img src="t.png" alt=""height="350px" width="550px"></td>
+        <td><img src="u.png" alt=""height="350px" width="550px"></td>
+      </tr>
+      <tr>
+      <td>Nike Basketball<br>
+   Styles made for your game</td><br/>
+      <td>Nike Golf<br>
+     Conquer any course in style </td><br/>
+      <td>Nike Trail<br>
+ Gear that leads to wild places</td><br/>
+      <td>Nike Tennis<br>
+    Serve up in style</td><br/>
+      <td>Nike Football<br>
+      Bring mad style to the pitch with the latest gear </td><br/>
+    </tr>
+    <br/>
+    <br/>
+    <tr>
+      <td><u>shop</u></td>
+      <td><u>shop</u></td>
+      <td><u>shop</u></td>
+      <td><u>shop</u></td>
+      <td><u>shop</u></td>
+    </tr>
+    </table>
+  </div>
+  <BR/><BR/>
+  <BR/>
+  <div class="time"> <p style="font-size: large; padding-left: 40px;"> 
+    Member Benifits
+</p>
+<div class="arrow">
+  <i class="fa-solid fa-less-than arr"></i>
+  <i class="fa-solid fa-greater-than arr"></i>
+</div>
+<div style="overflow-x:auto;" class="shoe">
+  <table>
+    <tr>
+      <td><img src="l.png" alt="" height="600px" width="500px"></td>
+      <td><img src="m.png" alt=""height="600px" width="500px"></td>
+      <td><img src="n.png" alt=""height="600px" width="500px"></td>
+      <td><img src="o.png" alt=""height="600px" width="500px"></td>
+      <td><img src="p.png" alt="" height="600px" width="500px"></td>
+    </tr>
+  </table>
+</div>
+  <diV class="list">
+    <ul type="none">
+      <lI class="head" style="color: black;">IconS</lI>
+      <lI>Air Force1</lI>
+      <lI>Huarache</lI>
+      <lI>Air Max 90</lI>
+      <lI>Air Max 95</lI>
+    </ul>
+    <ul type="none">
+      <lI class="head" style="color: black;">Shoes</lI>
+      <lI>All Shoes</lI>
+      <lI>Custom Shoes</lI>
+      <lI>Jorden Shoes</lI>
+      <lI>Running Shoes</lI>
+    </ul>
+    <ul type="none">
+      <li class="head" style="color: black;">Clothing</lI>
+      <lI>All Cloathing</lI>
+      <lI>Modest Wear</lI>
+      <lI>Hoodies & Pullovers</lI>
+      <lI>Shirts & Tops</lI>
+    </ul>
+    <ul type="none">
+      <lI class="head" style="color: black;">Kids'</lI>
+      <lI>Infant & Toddler Shoes</lI>
+      <lI>Kids' Shoes</lI>
+      <lI>Kids' Jorden Shoes</lI>
+      <lI>Kids' Basketball Shoes</lI>
+    </ul>
+ </diV>  
+ <footer class="foot">
+  <div class="foot">
+    <div><ul type="none">
+      <li>FIND A STORE</li>
+      <li>BECOME A MEMBER</li>
+      <li>GIVE US FEEDBACK</li>
+    </ul>
+    </div>
+    <div class="foot">
+      <ul type="none"><LI>HELP</LI>
+        <LI>Get help</LI>
+        <LI>Order status</LI>
+        <LI>Delivery</LI>
+        <LI>Returns</LI>
+        <LI>Payment options</LI>
+        <LI>Contact us on Nike.com Inquiries</LI>
+        <LI>Contact us on all other Inquiries</LI>
+      </ul>
+    </div>
+    <div class="">
+<ul type="none"><li>COMPANY</li>
+        <li>About Nike</li>
+        <li>News</li>
+        <li>Carrers</li>
+        <li>Investors</li>
+        <li>Sustainability</li> 
+      </ul>
+    </div>
+    </div>
+    <div class="icons" style="padding-top: 50px;padding-left: 370px;">
+    <ul type="none">
+     <li><i class="fa-brands fa-twitter" style="color: #0a0a0a;"></i></li>
+      <li><i class="fa-brands fa-facebook-f" style="color: #0d0d0d;"></i></li>
+     <li><i class="fa-brands fa-youtube" style="color: #0d0d0d;"></i></li>
+     <li><i class="fa-brands fa-instagram" style="color: #0d0d0d;"></i></li> 
+    </ul>
+  </div>
+
+ </footer>
+  </body>
+</html>
